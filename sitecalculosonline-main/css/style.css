@@ -1,0 +1,554 @@
+
+@font-face {
+    font-family: "carterone";
+    src: url(/Site/fontes/Boogaloo-Regular.ttf);
+}
+
+body{
+    overflow-x: hidden;
+    background-color: #3852551a;
+}
+
+/*.....................HEADER............................*/
+header{
+    background-color:#1439A8;
+    padding: 10px;
+    width: 100%;
+}
+
+
+header h1{
+    color: white;
+    font-family:"carterone", "arial";
+    text-shadow: 1px 3px 5px black;
+}
+
+header p{
+    color: white;
+    font-family:"carterone", "arial";
+    text-shadow: 1px 3px 5px black;
+    font-size: 15pt;
+}
+
+.dropdown{
+    display: none;
+}
+
+.dropdown-menu li{
+    padding-bottom: 5px;
+}
+
+@media(max-width: 425px){
+    .dropdown{
+        display:block;
+    }
+}
+
+/*.......................................................*/
+
+
+/*.....................SIDEBAR...........................*/
+
+.card{
+    display: none;
+}
+
+@media(min-width: 768px){
+    .card{
+        display:block;
+    }
+}
+
+.itens{
+    margin-top: 20px;
+    border-bottom: solid rgba(71, 70, 70, 0.219);
+    border-bottom-width: thin;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 13pt;
+}
+
+.itens:hover{
+    background-color: #217a8634;
+    cursor:pointer;
+}
+/*.....................................................*/
+
+
+
+
+.row2{
+    display: flex;
+}
+
+
+
+/*.....................CALCULADORA.....................*/
+
+.areacalc{
+    width: 550px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.calc{
+    width: 100%;
+    margin: auto;
+    padding: 15px;
+}
+
+.calculadora{
+    background-color: #1B4DE3;
+    border-radius: 15px;
+    padding: 15px;
+    margin: auto;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.botao{
+    margin: 2px;
+    width: 100%;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #071644;
+    color: white;
+    border: none; 
+}
+
+.botao:hover{
+    background-color: #153CB0;
+}
+
+#res{
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    font-size: 40px;
+    color: black;
+    text-align: right;
+    font-family: "cursive";
+}
+
+.tabela{
+    margin: auto;
+    width: 100%;
+}
+
+
+.calculadora h1{
+    text-align: center;
+    margin: auto;
+    color: white;
+    text-shadow: 1px 3px 5px black;
+}
+/*........................................................*/
+
+
+
+/*.....................REGRA DE 3..........................*/
+
+.arearegra3{
+    width: 550px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.regra3{
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 4px;
+    border: solid thin grey;
+    border-radius: 15px;
+    background-color: white;
+}
+
+
+.formula3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.formula3 input{
+    width: 35%;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius:10px;
+    border-style:solid;
+    border-color:black;
+    padding: 5px;
+}
+
+input:focus::placeholder{
+    color: transparent;
+}
+
+#res3{
+    background-color:#1439A8;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius:10px;
+    border-style:solid;
+    border-color:black;
+    padding: 5px;
+    width: 35%;
+    text-align: center;
+}
+
+@media screen and (max-width: 425px) {
+    .formula3 {
+      font-size: 70%;
+    }
+  }
+
+#p3 {
+    font-size: 150%;
+    color: black;
+    margin: auto;
+    padding: 2px;
+}
+
+#p4 {
+    background-color: #0b2d3148;
+    font-size: 23pt;
+    color: black;
+    text-align: center;
+}
+
+#btncalcular{
+    margin: auto;
+    background-color:#1439A8;
+    color: white;
+    font-size: 18pt;
+    border-radius: 10px;
+    border-style: solid;
+    width: 100px;
+}
+
+#btncalcular:hover{
+    cursor: pointer;
+    background-color:#1d52f0;
+}
+
+#btncalcular:active{
+    position:relative;
+    top:5px
+}
+/*........................................................*/
+
+
+/*.....................PORCENTAGEM........................*/
+
+section{
+    width: 550px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+
+.porcent{
+    background-color: white;
+    width: 100%;
+    border: solid thin grey;
+    padding: 5px;
+}
+
+.porcentagem{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 5px;
+    color: black;
+    border-bottom: solid thin grey;
+    font-size: 120%;
+}
+
+.porcentagem input{
+    width: 23%;
+    margin: 0px 5px 0px 5px;
+    border-radius:10px;
+    border-style:solid;
+    border-color:black;
+}
+
+@media screen and (max-width: 425px) {
+    .porcentagem {
+      font-size: 100%;
+    }
+  }
+
+.linha2{
+    display: flex;
+    margin-top: 10px;
+}
+
+
+#btnporcen{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    background-color: #1439A8;
+    border-radius:10px;
+    border-style:solid;
+    border-color:black;
+}
+
+#btnporcen:hover{
+    background-color:#1d52f0;
+}
+
+#btnporcen:active{
+    position:relative;
+    top:5px
+}
+
+.porcent p{ 
+    text-align: center;
+    margin: 5px 0px 15px 100px;
+    width: 40%;
+    padding: 4px;
+    border-radius:10px;
+    border-style:solid;
+    border-color:black;
+    font-size: 15pt;
+}
+
+
+.porcentagem2{
+    padding: 10px;
+    margin: auto;
+    color: black;
+    font-size: 120%;
+    border-bottom: solid thin grey;
+}
+
+.porcentagem2 input{
+    width: 20%;
+    margin: 0px 5px 0px 5px;
+    border-radius:10px;
+    border-style:solid;
+    border-color:black;
+    text-align: center;
+}
+
+.linha22{
+    display: flex;
+    margin-top: 15px;
+}
+
+.linha22 p{
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 425px) {
+    .linha22 p {
+      width: 100%;
+      margin-left: 15px;
+    }
+  }
+/*........................................................*/
+
+
+
+/*.....................MMC..............................*/
+.areammc{
+    border: solid thin grey;
+    width: 80%;
+    padding: 5px;
+}
+
+#subtitulo{
+    font-size: 13pt;
+}
+
+
+.mmc{
+    padding: 10px;
+    background-color: #1439A8;   
+}
+
+.mmc input{
+    text-align: center;
+    margin: 2px;
+    border-radius:10px;
+    border-style:solid;
+    border-color:black;
+}
+
+.linha2mmc{
+    display: flex;
+    
+}
+
+#btnmmc{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: white;
+    background-color: #1439A8;
+    border-radius:10px;
+    border-style:solid;
+    border-color:black;
+}
+
+#btnmmc:hover{
+    background-color:#1d52f0;
+}
+
+#btnmmc:active{
+    position:relative;
+    top:5px
+}
+
+.linha2mmc #resmmc{
+    text-align: center;
+    margin: 10px 0px 20px 50px;
+    width: 40%;
+    padding: 6px;
+    border-radius:10px;
+    border-style:solid;
+    border-color:black;
+    font-size: 13pt;
+}
+/*......................................................*/
+
+
+
+
+/*.....................MDC..............................*/
+.linha2mmc #resmdc{
+    text-align: center;
+    margin: 10px 0px 20px 50px;
+    width: 40%;
+    padding: 6px;
+    border-radius:10px;
+    border-style:solid;
+    border-color:black;
+    font-size: 13pt;
+}
+/*.....................................................*/
+
+
+/*........................FATORIAL......................*/
+
+#sectionfatorial{
+    width: 400px;
+}
+
+.fatorial{
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    border: solid thin grey;
+    padding: 10px;
+}
+
+
+#btnfatorial{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: white;
+    background-color: #1439A8;
+    border-radius:10px;
+    border-style:solid;
+    border-color:black;
+}
+
+#btnfatorial:hover{
+    background-color:#1d52f0;
+}
+
+#btnfatorial:active{
+    position:relative;
+    top:5px
+}
+
+.fatorial input{
+    padding: 5px;
+    text-align: center;
+    border-radius:10px;
+    border-style:solid;
+    border-color:black;
+}
+
+#resfatorial{
+    text-align: center;
+    margin-left: 90px;
+    width: 40%;
+    padding: 6px;
+    border-radius:10px;
+    border: solid thin black;
+    font-size: 13pt;
+    word-break: break-all;
+}
+/*....................................................*/
+
+.areatriangulo{
+    font-size: 13pt;
+    background-color: white;
+    margin: auto;   
+    border: solid thin grey;
+    padding: 25px;
+}
+
+.areatriangulo input{
+    text-align: center;
+    margin: 2px;
+    border-radius:10px;
+    border-style:solid;
+    border-color:black;
+}
+
+.linha1area{    
+    margin-bottom: 10px;
+}
+
+.linha2area{
+    margin-top: 20px;
+}
+
+.linha3area{
+    display: flex;
+}
+
+
+#restriangulo, #resquadrado, #reslosango, #resretangulo, #restrapezio, #resbola{
+    padding: 5px;
+    width: 50%;
+    text-align: center;
+    border-radius:10px;
+    border-style:solid;
+    border-color:#1439A8;
+}
+
+#btnarea{
+    text-align: center;
+    color: white;
+    background-color: #1439A8;
+    border-radius:10px;
+    border-style:solid;
+    border-color:black;
+    margin: 5px 0px 20px 20px;
+}
+
+#btnarea:hover{
+    background-color:#1d52f0;
+}
+
+#btnarea:active{
+    position:relative;
+    top:5px
+}

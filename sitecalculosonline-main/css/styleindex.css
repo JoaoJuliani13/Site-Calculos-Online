@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "carterone";
+    src: url(/Site/fontes/Boogaloo-Regular.ttf);
+}
+
+body{
+    overflow-x: hidden;
+    background-color: #3852551a;
+}
+
+/*.....................HEADER............................*/
+header{
+    background-color:#1439A8;
+    padding: 10px;
+    width: 100%;
+}
+
+
+header h1{
+    color: white;
+    font-family:"carterone", "arial";
+    text-shadow: 1px 3px 5px black;
+}
+
+header p{
+    color: white;
+    font-family:"carterone", "arial";
+    text-shadow: 1px 3px 5px black;
+    font-size: 15pt;
+}
+/*............................  ............................*/
+
+h4{
+    background-color: rgba(128, 128, 128, 0.247);
+    padding: 10px;
+}

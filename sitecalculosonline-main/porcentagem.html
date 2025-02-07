@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1611388854162830"
+     crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Calcular porcentagem online</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row d-flex flex-wrap align-items-center justify-content-center">
+                <div class="col-md-3">
+                    <a href="index.html"><img src="imagens/iconemain2.png" alt=""></a>
+                </div>
+                <div class="col-md-6">
+                    <div class="cabecalho">
+                        <h1 class="display-3">Cálculos Online</h1>
+                    </div>
+                    <div class="col-md-3 col-12">
+                        <div class="dropdown">
+                                <a class="btn btn-info text-white dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                Menu
+                                </a>
+                          
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="index.html">Início</a></li>
+                                <li><a class="dropdown-item" href="calculadora.html">Calculadora</a></li>
+                                <li><a class="dropdown-item" href="regra3.html">Regra de 3</a></li>
+                                <li><a class="dropdown-item" href="porcentagem.html">Porcentagem</a></li>
+                                <li><a class="dropdown-item" href="mmc.html">MMC</a></li>
+                                <li><a class="dropdown-item" href="mdc.html">MDC</a></li>
+                                <li><a class="dropdown-item" href="fatorial.html">Fatorial</a></li>
+                                <h5 class="card-title h5 mt-1 ms-1 mb-1"><strong>Cálculo de Área</strong></h5>
+                                <li><a class="dropdown-item" href="areatriangulo.html">Área do Triângulo</a></li>
+                                <li><a class="dropdown-item" href="areaquadrado.html">Área do Quadrado</a></li>
+                                <li><a class="dropdown-item" href="arealosango.html">Área do Losango</a></li>
+                                <li><a class="dropdown-item" href="arearetangulo.html">Área do Retângulo</a></li>
+                                <li><a class="dropdown-item" href="areatrapezio.html">Área do Trapézio</a></li>
+                                <li><a class="dropdown-item" href="areacirculo.html">Área do Círculo</a></li>
+                              </ul>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>  
+    
+    <div class="container">
+        <div class="row2">
+            <nav>
+                <div class="card border-light me-3 mt-1" style="width: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title display-6"><strong>Menu</strong></h5>
+                        <div class="sidebar">
+                            <a href="index.html">
+                                <div class="itens">
+                                    Início
+                                </div>
+                            </a>
+                            <a href="calculadora.html">
+                                <div class="itens">
+                                    Calculadora
+                                </div>
+                            </a>
+                            <a href="regra3.html">
+                                <div class="itens">
+                                    Regra de 3
+                                </div>
+                            </a>
+                            <a href="porcentagem.html">
+                                <div class="itens">
+                                    Porcentagem
+                                </div>
+                            </a>
+                            <a href="mmc.html">
+                                <div class="itens">
+                                    MMC
+                                </div>
+                            </a>
+                            <a href="mdc.html">
+                                <div class="itens">
+                                    MDC
+                                </div>
+                            </a>
+                            <a href="fatorial.html">
+                                <div class="itens">
+                                    Fatorial
+                                </div>
+                            </a>
+                            <h5 class="card-title h5 mt-4"><strong>Cálculo de Área</strong></h5>
+                            <a href="areatriangulo.html">
+                                <div class="itens">
+                                    Área do Triângulo
+                                </div>
+                            <a href="areaquadrado.html">
+                                <div class="itens">
+                                    Área do Quadrado
+                                </div>
+                            </a>
+                            <a href="arealosango.html">
+                                <div class="itens">
+                                    Área do Losango
+                                </div>
+                            </a>
+                            <a href="arearetangulo.html">
+                                <div class="itens">
+                                    Área do Retângulo
+                                </div>
+                            </a>
+                            <a href="areatrapezio.html">
+                                <div class="itens">
+                                    Área do Trapézio
+                                </div>
+                            </a>
+                            <a href="areacirculo.html">
+                                <div class="itens">
+                                    Área do Círculo
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <section>
+                <h1 class="mb-1">Porcentagens</h1>
+                <p id= "subtitulo">Digite os 2 valores correspondentes e clique em "Calcular".</p>
+                <div class="porcent">
+                    <div class="porcentagem">
+                        <strong>Quanto é</strong> <input type="number" style="text-align: center" placeholder="X" id="numer1"> <strong>% de</strong> <input type="number" style="text-align: center" placeholder="Y" id="numer2"> <strong>?</strong>
+                    </div>
+                    <div class="linha2">
+                        <input type="button" value="Calcular" class="ms-2" id="btnporcen" onclick="porcentagem1()">
+                        <p id="pp1">Resultado</p>
+                    </div>
+                </div>
+                <hr class="mt-5 mb-5">
+                <div class="porcent">
+                    <div class="porcentagem">
+                        <input type="number" style="text-align: center" placeholder="X" id="numerr1"><strong>É quantos % de</strong> <input type="number" style="text-align: center" placeholder="Y" id="numerr2"> <strong>?</strong>
+                    </div>
+                    <div class="linha2">
+                        <input type="button" value="Calcular" class="ms-2" id="btnporcen" onclick="porcentagem2()">
+                        <p id="pp2">Resultado</p>
+                    </div>
+                </div>
+                <hr class="mt-5 mb-5">
+                <h2 class="mb-4">Calcular aumento percentual:</h2>
+                <div class="porcent">
+                    <div class="porcentagem2">
+                        De <input type="number" placeholder="X" id="numerAP1"> para <input type="number" placeholder="Y" id="numerAP2"> houve quantos % de aumento?
+                    </div>
+                    <div class="linha22">
+                        <input type="button" value="Calcular" class="ms-2" id="btnporcen" onclick="aumentpercen()">
+                        <p id="pp3">Resultado</p>
+                    </div>
+                </div>
+                <hr class="mt-5 mb-5">
+                <h2 class="mb-4">Calcular diminuição percentual:</h2>
+                <div class="porcent">
+                    <div class="porcentagem2">
+                        De <input type="number" placeholder="X" id="numerDP1"> para <input type="number" placeholder="Y" id="numerDP2">diminuiu em quantos %?
+                    </div>
+                    <div class="linha22">
+                        <input type="button" value="Calcular" class="ms-2" id="btnporcen" onclick="diminpercen()">
+                        <p id="pp4">Resultado</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
